@@ -1,4 +1,10 @@
 ### Network test usage
+Clone the repo  
+```
+mkdir ~/Tools && cd "$_"
+git clone https://github.com/solosito/Tools .
+```  
+
 Make the script executable  
 `chmod +x networktest.sh`  
 
