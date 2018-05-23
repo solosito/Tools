@@ -36,4 +36,4 @@ You can use the PID to terminate the process prematurely
 
 `kill -9 25132`  
 
-The log can be checked in /
+The log can be checked in the `<log_file_path>`
