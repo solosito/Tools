@@ -1,8 +1,20 @@
-#!/bin/sh
+while true
+do
+	DATE=`date '+%Y-%m-%d %H:%M:%S'`
 
-if ping -c1 $1 &> /dev/null
-then
-    echo "[`date`] Host $1 found"
-else
-    echo "[`date`] Host $1 not found"
-fi
+	if ping -c 2 -q $1 &>/dev/null; then
+	    echo "[$DATE]: Connected"
+	else
+            DMESG=`dmesg | tail`
+	    IFCONFIG=`ifconfig wlp3s0`
+	    IWCONFIG=`iwconfig wlp3s0`
+	    echo -e "\n[$DATE]: Disconnected"
+	    echo -e "\t[dmesg output]"
+	    sed -r "s/^/\t\t/" <<< "$DMESG"
+	    echo -e "\t[ifconfig output]"
+	    sed -r "s/^/\t\t/" <<< "$IFCONFIG"
+	    echo -e "\t[iwconfig output]"
+            sed -r "s/^/\t\t/" <<< "$IWCONFIG"
+	fi
+	sleep $2
+done
