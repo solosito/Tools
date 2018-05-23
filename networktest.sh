@@ -6,8 +6,8 @@ do
 	    echo "[$DATE]: Connected"
 	else
             DMESG=`dmesg | tail`
-	    IFCONFIG=`ifconfig wlp3s0`
-	    IWCONFIG=`iwconfig wlp3s0`
+	    IFCONFIG=`ifconfig $3`
+	    IWCONFIG=`iwconfig $3`
 	    echo -e "\n[$DATE]: Disconnected"
 	    echo -e "\t[dmesg output]"
 	    sed -r "s/^/\t\t/" <<< "$DMESG"
