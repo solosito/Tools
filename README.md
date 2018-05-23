@@ -2,10 +2,17 @@
 Make the script executable  
 `chmod +x networktest.sh`  
 
-Replace `<hostname>` with the host to test, `<delay>` with the time to wait before sampling again and `<iface>` with the network interface to test  
-`nohup bash ~/Tools/networktest.sh <hostname> <delay> <iface> </dev/null > /tmp/networktest.out 2>&1 &`  
+Run logging command:  
+`nohup bash ~/Tools/networktest.sh <hostname> <delay> <iface> </dev/null > <log_file_path> 2>&1 &`  
 
-The time format is defined as follows:  
+Parameters:  
+* `<hostname>` the host to test  
+* `<delay>` the time to wait before sampling again  
+* `<iface>` the network interface to test  
+* `<log_file_path>` the file to store the data logged
+
+
+The time delay format is defined as follows:  
 `NUMBERsuffix`  
 Where suffix may be:  
 * s for seconds (the default)  
@@ -22,3 +29,5 @@ The bash job ID will appear in brackets, and the process ID (PID) listed after. 
 You can use the PID to terminate the process prematurely  
 
 `kill -9 25132`  
+
+The log can be checked in /
