@@ -20,7 +20,7 @@ Where suffix may be:
 * h for hours  
 * d for days  
 
-For instance:
+For instance:  
 `nohup bash ~/Tools/networktest.sh 192.168.168.1 5m wlan1 </dev/null > /tmp/networktest.out 2>&1 &`
 
 The bash job ID will appear in brackets, and the process ID (PID) listed after. For example:  
