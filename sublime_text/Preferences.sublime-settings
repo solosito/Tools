@@ -1,0 +1,15 @@
+{
+	"draw_white_space": "selection",
+	"open_files_in_new_window": false,
+	"word wrap": true,
+	"highlight_modified_tabs": true,
+	"highlight_line": true,
+	"bold_folder_labels": true,
+    "translate_tabs_to_spaces": true,
+    "scroll_past_end": true,
+    "remember_full_screen": false,
+    "shift_tab_unindent": true,
+    "indent_to_bracket": true,
+	"font_size": 9,
+	"rulers": [120]
+}

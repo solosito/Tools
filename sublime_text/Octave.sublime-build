@@ -1,0 +1,19 @@
+{
+    "shell": true,
+    "path": "C:\\Octave\\Octave-4.4.0\\bin\\",
+    "cmd": [
+        // Binary
+        "octave-cli",
+
+        // Options
+            // "--no-gui",
+            "--silent",
+            // "--verbose",
+            "--traditional",  // Set variables for closer MATLAB compatibility.
+            "--persist",
+            "--interactive",
+
+        // File
+        "$file"
+    ]
+}
