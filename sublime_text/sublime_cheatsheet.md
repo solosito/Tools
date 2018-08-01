@@ -19,3 +19,6 @@ Make a search and then press `Ctrl+D` and `Alt+F3`
 
 * Doesn't start with: "    ///", neither: "typedef", neither "void", not containing ";"  
     `^(?!^}|typedef|void|    ///)(?=.*;).*$`
+
+* Trailing whitespaces (replace with $1):  
+    `[ \t]+(\r?$)`
