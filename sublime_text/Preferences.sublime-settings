@@ -1,15 +1,56 @@
 {
-	"draw_white_space": "selection",
-	"open_files_in_new_window": false,
-	"word wrap": true,
-	"highlight_modified_tabs": true,
-	"highlight_line": true,
+	"atomic_save": true,
 	"bold_folder_labels": true,
-    "translate_tabs_to_spaces": true,
-    "scroll_past_end": true,
-    "remember_full_screen": false,
-    "shift_tab_unindent": true,
-    "indent_to_bracket": true,
-	"font_size": 9,
-	"rulers": [120]
+	"draw_white_space": "selection",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		".tags",
+		".tags_sorted_by_file"
+	],
+	"find_selected_text": true,
+	"shift_tab_unindent": true,
+	"folder_exclude_patterns":
+	[
+		".hg",
+		"CVS",
+		"build",
+		".git"
+	],
+	"font_size": 12,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"VimModelines",
+		"Vintage"
+	],
+	"indent_to_bracket": true,
+	"open_files_in_new_window": false,
+	"scroll_past_end": true,
+	"trailing_spaces_syntax_ignore":
+	[
+		"Packages/Markdown/Markdown.sublime-syntax"
+	],
+	"translate_tabs_to_spaces": true,
+	"rulers": [120],
+	"trim_trailing_white_space_on_save": false
 }
