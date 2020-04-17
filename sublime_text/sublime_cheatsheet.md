@@ -22,3 +22,6 @@ Make a search and then press `Ctrl+D` and `Alt+F3`
 
 * Trailing whitespaces (replace with $1):  
     `[ \t]+(\r?$)`
+
+* Select all ocurrences of selected text:  
+    `Ctrl` + `CMD` + `G`
